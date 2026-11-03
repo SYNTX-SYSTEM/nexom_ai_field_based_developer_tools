@@ -60,6 +60,38 @@ It was an extensible technical foundation.
 
 ---
 
+
+---
+
+# 🖥️ RICO-7 | The System in Action
+
+Three developer tools. One shared field-based architecture.
+
+### 🧠 Module A | User Intent & Context Inspector
+
+From natural-language requests to structured context,
+requirements, unresolved references and field relationships.
+
+![User Intent & Context Inspector](docs/screenshots/screenshot_inspector.png)
+
+### 🔄 Module B | Recursive Feedback & Decision Trace
+
+Decisions, corrections and feedback become visible
+as connected, evolving system relationships.
+
+![Recursive Feedback Engine](docs/screenshots/screenshot_feedback_engine.png)
+
+### 🧭 Module C | User Understanding Gap Detector
+
+Missing information, dependency frontiers and clarification
+requirements become inspectable within the field model.
+
+![User Understanding Gap Detector](docs/screenshots/screenshot_gap_detector.png)
+
+**🧬 SYNTX | Architecture becomes executable.**
+
+---
+
 # 🧠 The Architectural Idea
 
 ## Understanding is relational.
