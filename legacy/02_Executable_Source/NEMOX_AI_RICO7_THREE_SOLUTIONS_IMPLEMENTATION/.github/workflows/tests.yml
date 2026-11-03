@@ -1,0 +1,14 @@
+name: Python API Tests
+on: [push, pull_request]
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        solution: [01_user_intent_inspector, 02_recursive_feedback_engine, 03_understanding_gap_detector]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r ${{ matrix.solution }}/requirements.txt
+      - run: cd ${{ matrix.solution }} && PYTHONPATH=.:../shared pytest -q

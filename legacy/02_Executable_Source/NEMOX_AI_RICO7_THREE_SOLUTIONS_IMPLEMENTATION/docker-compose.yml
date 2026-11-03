@@ -1,0 +1,10 @@
+services:
+  intent:
+    build: {context: ., dockerfile: 01_user_intent_inspector/Dockerfile}
+    ports: ['8011:8011']
+  feedback:
+    build: {context: ., dockerfile: 02_recursive_feedback_engine/Dockerfile}
+    ports: ['8012:8012']
+  gaps:
+    build: {context: ., dockerfile: 03_understanding_gap_detector/Dockerfile}
+    ports: ['8013:8013']

@@ -1,0 +1,8 @@
+FROM python:3.12-slim
+WORKDIR /app
+COPY shared /app
+COPY 01_user_intent_inspector/backend /app/backend
+COPY 01_user_intent_inspector/requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+ENV PYTHONPATH=/app
+CMD ["uvicorn","backend.main:app","--host","0.0.0.0","--port","8011"]
